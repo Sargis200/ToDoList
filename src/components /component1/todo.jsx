@@ -36,13 +36,7 @@ const TodoApp = () => {
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
         <h1 className="text-2xl font-bold text-center mb-4 text-gray-800">To-Do App</h1>
         <div className="flex items-center mb-4">
-          <input
-            type="text"
-            value={task}
-            onChange={handleInputChange}
-            placeholder="Add a new task"
-            className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
-          />
+          <input type="text" value={task} onChange={handleInputChange} placeholder="Add a new task" className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-300"/>
           <button
             onClick={addTask}
             className="ml-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none"
@@ -70,7 +64,7 @@ const TodoApp = () => {
                 onClick={() => deleteTask(task.id)}
                 className="px-3 py-1 text-sm bg-red-500 text-white rounded-lg hover:bg-red-600 focus:outline-none"
               >
-                Delete
+                Completed
               </button>
             </li>
           ))}
