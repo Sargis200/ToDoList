@@ -62,7 +62,7 @@ const TodoApp = () => {
               </span>
               <button
                 onClick={() => deleteTask(task.id)}
-                className="px-3 py-1 text-sm bg-red-500 text-white rounded-lg hover:bg-red-600 focus:outline-none"
+                className="px-3 py-1  text-blue rounded-lgfocus:outline-none"
               >
                 Completed
               </button>
